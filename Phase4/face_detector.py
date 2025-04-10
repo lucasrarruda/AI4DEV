@@ -4,7 +4,7 @@ FACE_CASCADE = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_fronta
 
 def detect_faces(frame):
     gray_image = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    faces = FACE_CASCADE.detectMultiScale(gray_image, scaleFactor=1.05, minNeighbors=6, minSize=(80, 80))
+    faces = FACE_CASCADE.detectMultiScale(gray_image, scaleFactor=1.1, minNeighbors=5, minSize=(60, 60))
     return faces
 
 def draw_faces_rectangle(faces, frame):
