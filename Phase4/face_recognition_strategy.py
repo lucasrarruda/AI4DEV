@@ -6,15 +6,16 @@ from player_strategy import PlayerStrategy
 
 class FaceRecognitionStrategy(PlayerStrategy):
     def __init__(self):
+        self.face_locations = []
+        self.face_names = []
         load_known_faces_dir = 'Phase4/known_faces'
         self.known_faces, self.known_names = self.load_known_faces(load_known_faces_dir)
 
     def process_frame(self, frame, video_capture):
         frame_id = int(video_capture.get(cv2.CAP_PROP_POS_FRAMES))
-        face_locations, face_names = [], []
         if frame_id % 6 == 0:
-            face_locations, face_names = self.recognize_faces(frame, self.known_faces, self.known_names)
-        return self.draw_face_rectangle(frame, face_locations, face_names)
+            self.face_locations, self.face_names = self.recognize_faces(frame, self.known_faces, self.known_names)
+        return self.draw_face_rectangle(frame, self.face_locations, self.face_names)
     
     def load_known_faces(self, known_faces_dir):
         known_faces = []
