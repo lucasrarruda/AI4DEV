@@ -2,9 +2,9 @@ import cv2
 import face_recognition
 import os
 import numpy as np
-from player_strategy import PlayerStrategy
+from player_strategy import AlgorithmStrategy
 
-class FaceRecognitionStrategy(PlayerStrategy):
+class FaceRecognitionStrategy(AlgorithmStrategy):
     def __init__(self):
         self.face_locations = []
         self.face_names = []

@@ -1,8 +1,8 @@
-from player_strategy import PlayerStrategy
+from player_strategy import AlgorithmStrategy
 from deepface import DeepFace
 import cv2
 
-class FaceEmotionStrategy(PlayerStrategy):
+class FaceEmotionStrategy(AlgorithmStrategy):
     def process_frame(self, frame, video_capture):
         faces = DeepFace.analyze(frame, actions=['emotion'], enforce_detection=False)
         return self.draw_faces_emotions(faces, frame)

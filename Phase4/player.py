@@ -1,13 +1,13 @@
 import cv2
-from player_strategy import PlayerStrategy
+from player_strategy import AlgorithmStrategy
 
 class Player:
-    def __init__(self, video_path, strategy: PlayerStrategy, window_title="Video"):
+    def __init__(self, video_path, strategy: AlgorithmStrategy, window_title="Video"):
         self.video_path = video_path
         self.strategy = strategy
         self.window_title = window_title
 
-    def set_strategy(self, strategy: PlayerStrategy):
+    def set_strategy(self, strategy: AlgorithmStrategy):
         self.strategy = strategy
 
     def play(self):

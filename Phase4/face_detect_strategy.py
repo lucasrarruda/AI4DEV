@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
-from player_strategy import PlayerStrategy
+from player_strategy import AlgorithmStrategy
 
-class FaceDetectStrategy(PlayerStrategy):
+class FaceDetectStrategy(AlgorithmStrategy):
     def __init__(self):
         self.face_dnn = cv2.dnn.readNetFromCaffe(
             'Phase4/models/deploy.prototxt.txt',
