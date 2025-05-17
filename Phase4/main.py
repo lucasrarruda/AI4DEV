@@ -16,6 +16,5 @@ if __name__ == "__main__":
     # player.play()
 
     # face_emotion_strategy = FaceEmotionStrategy()
-    # player.set_strategy(face_emotion_strategy)
-    # player.window_title = "Face Emotion Recognition"
+    # player = Player(video_path, face_emotion_strategy, window_title="Face Emotion Recognition")
     # player.play()
