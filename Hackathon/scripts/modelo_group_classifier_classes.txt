@@ -1,0 +1,10 @@
+Analytics
+ApplicationIntegration
+ArtificialIntelligence
+Compute
+Database
+DeveloperTools
+General
+Networking
+Security
+Storage
