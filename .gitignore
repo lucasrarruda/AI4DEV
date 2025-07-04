@@ -161,10 +161,13 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+Hackathon2/models/
+Hackathon2/datasets/
 Hackaton/DetectComponents/labels/
 Hackaton/DetectComponents/images/
 hkt/
 hkt-detect/
+slt/
 tech3/
 trn.json
 ph4/

@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import cv2
 
 # Configurações
-test_img_dir = r'C:/Projects/AI4DEV/Hackathon2/test_images'
+test_img_dir = r'C:/Projects/AI4DEV/Hackathon2/aws_dataset_raw'
 model_path = r'C:/Projects/AI4DEV/Hackathon2/models/yolo_sintetico/weights/best.pt'  # Ajuste se necessário
 img_size = 640
 
