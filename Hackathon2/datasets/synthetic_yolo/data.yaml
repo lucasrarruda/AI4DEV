@@ -1,0 +1,4 @@
+train: C:/Projects/AI4DEV/Hackathon2/datasets/synthetic_yolo\images
+val: C:/Projects/AI4DEV/Hackathon2/datasets/synthetic_yolo\images
+nc: 22
+names: ['ALB_NLB', 'APIGateway', 'AppSync', 'CloudFormation', 'CloudFront', 'CloudTrail', 'CloudWatch', 'Cognito', 'Dynamo', 'EC2', 'EMR', 'Glue', 'IAM', 'KMS', 'Lambda', 'RDS', 'Route53', 'S3', 'SNS', 'SQS', 'SecretsManager', 'StepFunctions']
